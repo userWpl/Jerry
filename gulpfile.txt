@@ -1,0 +1,20 @@
+const gulp=require('gulp');
+const imgMin=require('gulp-imagemin');
+
+gulp.task('uglify:img',function(){
+    gulp.src('src/img/*.*')
+   .pipe(imgMin())
+   .pipe(gulp.dest('test/build/img'))
+});
+gulp.task('uglify:img2',function(){
+    gulp.src('src/img/icon/*.*')
+   .pipe(imgMin())
+   .pipe(gulp.dest('test/build/img/icon'))
+});
+gulp.task('uglify:img3',function(){
+    gulp.src('src/img/images/*.*')
+   .pipe(imgMin())
+   .pipe(gulp.dest('test/build/img/images'))
+});
+
+gulp.task('default', ['uglify:img','uglify:img2','uglify:img3']);

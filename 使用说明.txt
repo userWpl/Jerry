@@ -1,0 +1,51 @@
+node安装后 
+
+1、     cmd 运行 npm 安装好后 全局安装gulp   
+       命令行输入  cnpm install -g gulp   回车
+
+2、  新建一个文件夹  将 gulpfile.js   和  package.json
+           文件放在里面 
+           打开cmd 命令 
+           npm install --save-dev gulp
+
+3、   npm install  生成新的 node_modules 文件夹
+
+4、   创建src 文件夹 在里面 放 
+              html 文件夹
+              css  文件夹
+              js    文件夹
+              img  文件夹  等
+
+5、    这样运行    gulp  后会生成相应的
+                              
+                     test文件夹
+                    也就是  打包后的  build  文件夹
+
+6、      生成类似   -------------------------------------
+     	  Local: http://localhost:8686
+  	  External: http://192.168.1.83:8686
+	 -------------------------------------
+         	 UI: http://localhost:3001
+	 UI External: http://192.168.1.83:3001
+	 -------------------------------------
+
+7、      此时浏览器路径为 http://localhost:8686
+           页面显示为      Cannot GET /
+
+
+8、      改变路径  为    http://localhost:8686/src/html/1.html
+	这时就可以 浏览页面了  更改 html 文件 保存
+	 页面就可以实时刷新
+
+9、       用 IP 地址   也就是  这种    ↓↓↓↓
+
+	 http://192.168.1.83:8686/src/html/1.html
+
+	   打开网页 搜索   
+
+		 https://cli.im/
+
+	生成草料二维码  手机扫描浏览即可
+
+10、      这时候就可以真机调试了	
+
